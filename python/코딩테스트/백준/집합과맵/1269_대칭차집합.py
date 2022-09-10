@@ -1,0 +1,6 @@
+pr=open('input.txt','r').read().split('\n')
+n,m=map(int,pr[0].split())
+a=set(pr[1].split())
+b=set(pr[2].split())
+lst=list(a&b)
+print(n+m-2*len(lst))
